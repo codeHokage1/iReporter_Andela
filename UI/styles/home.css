@@ -165,4 +165,15 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
+footer{
+    background-color: var(--grey);
+    color: white;
+    font-family: var(--font-heading);
+    padding: 1em;
+    text-align: center;
+}
+footer a{
+    color: inherit;
+}
+
 
