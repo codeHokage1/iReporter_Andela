@@ -26,6 +26,10 @@ header {
 	align-items: center;
 	padding: 2em 3em;
 }
+header a{
+    text-decoration: none;
+    color: inherit;
+}
 .brand {
 	display: flex;
 	align-items: center;
