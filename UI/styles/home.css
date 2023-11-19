@@ -1,5 +1,98 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+@font-face {
+	font-family: "Basier Square";
+	src: url("../assets/fonts/Basier\ Square\ Regular/Basier Square Regular.otf");
+}
+
+:root {
+	--font-heading: "Space Grotesk", sans-serif;
+	--font-body: "Basier Square", sans-serif;
+	--grey: #6e6e6e;
+	--lime-green: #00dd00;
+	--bluish: #7cb2f8;
+	--dark-green: rgb(8, 96, 8);
+}
+
+body {
+	font-family: var(--font-body);
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 3em;
+}
+.brand {
+	display: flex;
+	align-items: center;
+}
+.brand p {
+	font-size: 2.2rem;
+	font-family: var(--font-heading);
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	text-decoration: none;
+	color: var(--grey);
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: var(--font-heading);
+	border: 1px solid var(--dark-green);
+	padding: 0.5em 1em;
+	transition: 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.hero{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-text{
+    max-width: 40%;
+    font-size: 3rem;
+    color: var(--grey);
+    font-family: var(--font-heading);
+    text-decoration: underline var(--bluish);
+}
+.hero img{
+    width: 30%;
+}
+.cta{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.hero-cta{
+    text-decoration: none;
+	color: var(--grey);
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: var(--font-heading);
+	border: 1px solid var(--dark-green);
+	padding: 0.5em 1em;
+	transition: 0.3s ease-in-out;
+}
+.hero-cta:hover{
+    background-color: var(--dark-green);
+    color: white;
+}
+
