@@ -66,6 +66,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 65vh;
 }
 .hero-text{
     max-width: 40%;
@@ -79,7 +80,7 @@ nav ul li a:hover {
 }
 .cta{
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 .hero-cta{
     text-decoration: none;
@@ -96,3 +97,39 @@ nav ul li a:hover {
     color: white;
 }
 
+.actions{
+    background-color: var(--bluish);
+    padding: 5em;
+}
+.actions h2{
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.actions-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0;
+}
+.action-item{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+    max-width: 500px;
+}
+.action-item img{
+    width: 200px;
+}
+.action-text h3{
+    margin-bottom: .5em;
+    text-decoration: underline dashed var(--dark-green) 3px;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+.action-text p{
+    font-size: 1.2rem;
+}
