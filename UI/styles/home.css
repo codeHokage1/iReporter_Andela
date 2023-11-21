@@ -177,3 +177,49 @@ footer a{
 }
 
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul{
+        margin: 2em 0 1em;
+    }
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+        gap: 2em;
+    }
+    .hero-text{
+        order: 2;
+        max-width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .hero img{
+    width: 70%;
+    }
+    
+    .actions, .features{
+        padding: 2em;
+    }
+    .actions h2, .features h2{
+        font-size: 2rem;
+    }
+    .actions-content, .features-content{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .action-text h3,.feature-text h3{
+        font-size: 1.2rem;
+    }
+    .feature-text{
+        font-size: 1rem;
+    }
+    .feature-item img{
+        width: 100px;
+    }   
+}
+
+
