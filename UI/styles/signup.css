@@ -65,6 +65,62 @@ nav ul li a:hover {
     color: white;
 }
 
+main h1{
+   font-family: var(--font-heading);
+   text-align: center;
+   font-size: 2rem;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   margin: 2em auto;
+   max-width: 50%;
+   padding: 1.5em;
+   border: 1px solid var(--dark-green);
+   box-shadow: 10px 10px var(--dark-green);
+}
+
+label{
+   font-family: var(--font-heading);
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+.form-line{
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+.form-line input{
+   padding: .5em;
+   border: 1px solid var(--grey);
+   font-size: 1rem;
+   font-family: var(--font-body);
+}
+.form-line input:focus{
+   outline: none;
+   border-bottom: 2px solid var(--bluish);
+}
+input[type="submit"]{
+   background-color: var(--dark-green);
+   color: white;
+   font-family: var(--font-heading);
+   font-size: 1rem;
+   font-weight: 500;
+   padding: .5em 1em;
+   border: none;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+input[type="submit"]:hover{
+   background-color: transparent;
+   color: var(--grey);
+   border: 2px solid var(--dark-green);
+}
+
+
+
+
 footer{
    background-color: var(--grey);
    color: white;
