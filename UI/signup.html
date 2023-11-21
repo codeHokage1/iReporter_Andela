@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>iReport - Sign Up</title>
+		<link rel="stylesheet" href="./styles/signup.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="./index.html">
+				<div class="brand">
+					<img
+						src="https://img.icons8.com/external-parzival-1997-flat-parzival-1997/64/external-citizen-digital-globalization-parzival-1997-flat-parzival-1997.png"
+						alt="citizen logo for iReporter"
+					/>
+					<p>iReporter</p>
+				</div>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="./signup.html">Sign Up</a></li>
+					<li><a href="#">Sign In</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Join us in making change!</h1>
+
+			<form action="#" method="post" autocomplete="off">
+				<div class="form-line">
+					<label for="full-name">Full Name:</label>
+					<input
+						type="text"
+						name="full-name"
+						id="full-name"
+						placeholder="e.g Farhan Sodiq"
+						required
+					/>
+				</div>
+
+            <div class="form-line">
+					<label for="email">Email Address:</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="e.g farhan1234@gmail.com"
+						required
+					/>
+				</div>
+
+            <div class="form-line">
+					<label for="number">Phone Number:</label>
+					<input
+						type="text"
+						name="number"
+						id="number"
+						placeholder="e.g +23480123456"
+						required
+					/>
+				</div>
+
+            <div class="form-line">
+					<label for="password">Create password:</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+                  minlength="6"
+                  placeholder="Minimum of 6 characters"
+                  required
+					/>
+				</div>
+
+            <div class="form-line">
+					<label for="password">Confirm password:</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+                  minlength="6"
+                  placeholder="Must be same as initial password"
+                  required
+					/>
+				</div>
+
+            <input type="submit" value="Create Account">
+			</form>
+		</main>
+
+		<footer>
+			<p>
+				&copy;2023 iReporter by <a href="https://github.com/codeHokage1" target="_blank">Farhan</a>
+			</p>
+		</footer>
+	</body>
+</html>

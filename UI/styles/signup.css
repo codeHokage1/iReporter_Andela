@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: "Basier Square";
+	src: url("../assets/fonts/Basier\ Square\ Regular/Basier Square Regular.otf");
+}
+
+:root {
+	--font-heading: "Space Grotesk", sans-serif;
+	--font-body: "Basier Square", sans-serif;
+	--grey: #6e6e6e;
+	--lime-green: #00dd00;
+	--bluish: #7cb2f8;
+	--dark-green: rgb(8, 96, 8);
+}
+
+body {
+	font-family: var(--font-body);
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 3em;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+.brand {
+	display: flex;
+	align-items: center;
+}
+.brand p {
+	font-size: 2.2rem;
+	font-family: var(--font-heading);
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	text-decoration: none;
+	color: var(--grey);
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: var(--font-heading);
+	border: 1px solid var(--dark-green);
+	padding: 0.5em 1em;
+	transition: 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+footer{
+   background-color: var(--grey);
+   color: white;
+   font-family: var(--font-heading);
+   padding: 1.2em;
+   text-align: center;
+}
+footer a{
+   color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+   header {
+       flex-direction: column;
+   }
+   nav ul{
+       margin: 2em 0 1em;
+   }
+
+   .hero{
+       flex-direction: column;
+       height: auto;
+       gap: 2em;
+   }
+   .hero-text{
+       order: 2;
+       max-width: 80%;
+       font-size: 1.5rem;
+       text-align: center;
+       margin-bottom: 1em;
+   }
+   .hero img{
+   width: 70%;
+   }
+   
+   .actions, .features{
+       padding: 2em;
+   }
+   .actions h2, .features h2{
+       font-size: 2rem;
+   }
+   .actions-content, .features-content{
+       flex-direction: column;
+       gap: 2em;
+   }
+   .action-text h3,.feature-text h3{
+       font-size: 1.2rem;
+   }
+   .feature-text{
+       font-size: 1rem;
+   }
+   .feature-item img{
+       width: 100px;
+   }   
+}
